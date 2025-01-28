@@ -6,9 +6,6 @@ const { describe, it } = require('mocha');
 
 const waitTime = 10000;
 
-
-
-
 beforeEach(async () => {
   await ReadyPage.load();
   await driver.maximizeWindow();
@@ -21,7 +18,7 @@ beforeEach(async () => {
 });
 
 
-describe('FAQPage', () => {
+describe('FAQ Page', () => {
   // FAQ_001
   it('verifyAboutLinkRedirected', async () => {
     await expect(FAQPage.getFAQPageTitleElement).toHaveText('Frequently Asked Questions');

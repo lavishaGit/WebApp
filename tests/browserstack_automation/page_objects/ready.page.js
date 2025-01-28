@@ -467,4 +467,5 @@ class ReadyPage extends Page {
     await this.toggleFinePrintButton.findAndClick();
   }
 }
+
 export default new ReadyPage();
